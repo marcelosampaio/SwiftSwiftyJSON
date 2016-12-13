@@ -7,17 +7,39 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        parseJSON()
+
+    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    // MARK: - JSON Helper
+    private func parseJSON() {
+        
+        let path = Bundle.main.path(forResource: "JSONSource", ofType: "json") as String!
+        let jsonData = NSData(contentsOfFile: path!) as NSData!
+        
+        let readableJson = JSON(data: jsonData as! Data, options: JSONSerialization.ReadingOptions.mutableContainers, error: nil)
+        
+//        let name = readableJson["people","person","name"]
+        let name = readableJson["people"]["person"]["name"]
+        
+        
+        
+        print("**** name: \(name)")
+        
+        
     }
 
 
