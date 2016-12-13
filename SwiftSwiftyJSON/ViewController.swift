@@ -32,12 +32,21 @@ class ViewController: UIViewController {
         
         let readableJson = JSON(data: jsonData as! Data, options: JSONSerialization.ReadingOptions.mutableContainers, error: nil)
         
-//        let name = readableJson["people","person","name"]
-        let name = readableJson["people"]["person"]["name"]
+
+//        let name = readableJson["people"]["person"]["name"]
         
         
         
-        print("**** name: \(name)")
+        print("**** readableJson: \(readableJson)")
+        
+    
+        for (_, object) in readableJson {
+            let name = object["name"].stringValue
+            let cont = object["cont"].stringValue
+            
+            print("****** name: \(name)      counter: \(cont)")
+        }
+        
         
         
     }
