@@ -41,11 +41,12 @@ class ViewController: UIViewController {
         
     
         for (_, object) in readableJson {
-            let name = object["name"].stringValue
-            let user = User.init(id: 13, email: object["email"].stringValue, name: object["name"].stringValue)
+
+
+            let user = User.init(id: object["id"].stringValue, email: object["email"].stringValue, name: object["name"].stringValue)
             
             
-            print("****** name: \(user.name)  email: \(user.email)")
+            print("****** name: \(user.name)  email: \(user.email)  id: \(user.id)")
         }
         
         
