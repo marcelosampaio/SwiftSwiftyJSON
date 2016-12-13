@@ -42,9 +42,10 @@ class ViewController: UIViewController {
     
         for (_, object) in readableJson {
             let name = object["name"].stringValue
-            let cont = object["cont"].stringValue
+            let user = User.init(id: 13, email: object["email"].stringValue, name: object["name"].stringValue)
             
-            print("****** name: \(name)      counter: \(cont)")
+            
+            print("****** name: \(user.name)  email: \(user.email)")
         }
         
         
