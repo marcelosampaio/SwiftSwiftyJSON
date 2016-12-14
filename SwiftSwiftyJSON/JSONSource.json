@@ -1,12 +1,30 @@
- [
-  {
-    "email": "anvisa@anvisa.com.br",
-    "id": "1001",
-    "name": "Anvisa"
-  },
-  {
-  "email": "rubyonrails@anvisa.com.br",
-  "id": "5092",
-  "name": "Ruby On Rails"
-  }
-  ]
+{
+    "user":{
+        "email":"rubyonrails@anvisa.com.br",
+        "id":"5092",
+        "name":"Ruby On Rails"
+    },
+    "references":[
+                  {
+                  "reference":{
+                  "type":"00001",
+                  "categoryId":"ctg01",
+                  "year":"2002"
+                  }
+                  },
+                  {
+                  "reference":{
+                  "type":"00002",
+                  "categoryId":"ctg01",
+                  "year":"2003"
+                  }
+                  },
+                  {
+                  "reference":{  
+                  "type":"00011",
+                  "categoryId":"ctg02",
+                  "year":"2004"
+                  }
+                  }
+                  ]
+}

@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		95684FB2789F78F0F1A250B2 /* Pods_SwiftSwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901D3E5D7082469076DCD6E2 /* Pods_SwiftSwiftyJSON.framework */; };
 		9C1D3D201E006D7100819A66 /* JSONSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D3D1F1E006D7100819A66 /* JSONSource.json */; };
-		9C1D3D221E00965800819A66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D3D211E00965800819A66 /* User.swift */; };
 		9CC3E2E41E00644500B47760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3E2E31E00644500B47760 /* AppDelegate.swift */; };
 		9CC3E2E61E00644500B47760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3E2E51E00644500B47760 /* ViewController.swift */; };
 		9CC3E2E91E00644500B47760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3E2E71E00644500B47760 /* Main.storyboard */; };
 		9CC3E2EB1E00644500B47760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3E2EA1E00644500B47760 /* Assets.xcassets */; };
 		9CC3E2EE1E00644500B47760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3E2EC1E00644500B47760 /* LaunchScreen.storyboard */; };
+		9CF8D33C1E017DE200C7E090 /* DaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D3381E017DE200C7E090 /* DaseResponse.swift */; };
+		9CF8D33D1E017DE200C7E090 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D3391E017DE200C7E090 /* Reference.swift */; };
+		9CF8D33E1E017DE200C7E090 /* References.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D33A1E017DE200C7E090 /* References.swift */; };
+		9CF8D33F1E017DE200C7E090 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8D33B1E017DE200C7E090 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AF69DD94A0E3922C8ECA927 /* Pods-SwiftSwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSwiftyJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSwiftyJSON/Pods-SwiftSwiftyJSON.release.xcconfig"; sourceTree = "<group>"; };
 		901D3E5D7082469076DCD6E2 /* Pods_SwiftSwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D3D1F1E006D7100819A66 /* JSONSource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONSource.json; sourceTree = "<group>"; };
-		9C1D3D211E00965800819A66 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9CC3E2E01E00644500B47760 /* SwiftSwiftyJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSwiftyJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC3E2E31E00644500B47760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC3E2E51E00644500B47760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +31,10 @@
 		9CC3E2EA1E00644500B47760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC3E2ED1E00644500B47760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC3E2EF1E00644500B47760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF8D3381E017DE200C7E090 /* DaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaseResponse.swift; path = Model/DaseResponse.swift; sourceTree = "<group>"; };
+		9CF8D3391E017DE200C7E090 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Model/Reference.swift; sourceTree = "<group>"; };
+		9CF8D33A1E017DE200C7E090 /* References.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = References.swift; path = Model/References.swift; sourceTree = "<group>"; };
+		9CF8D33B1E017DE200C7E090 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		B8689CF632D43FF3FE7061E8 /* Pods-SwiftSwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSwiftyJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSwiftyJSON/Pods-SwiftSwiftyJSON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +62,10 @@
 		9C1D3D231E00966500819A66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9C1D3D211E00965800819A66 /* User.swift */,
+				9CF8D3381E017DE200C7E090 /* DaseResponse.swift */,
+				9CF8D3391E017DE200C7E090 /* Reference.swift */,
+				9CF8D33A1E017DE200C7E090 /* References.swift */,
+				9CF8D33B1E017DE200C7E090 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -228,8 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC3E2E61E00644500B47760 /* ViewController.swift in Sources */,
+				9CF8D33D1E017DE200C7E090 /* Reference.swift in Sources */,
+				9CF8D33F1E017DE200C7E090 /* User.swift in Sources */,
+				9CF8D33C1E017DE200C7E090 /* DaseResponse.swift in Sources */,
+				9CF8D33E1E017DE200C7E090 /* References.swift in Sources */,
 				9CC3E2E41E00644500B47760 /* AppDelegate.swift in Sources */,
-				9C1D3D221E00965800819A66 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

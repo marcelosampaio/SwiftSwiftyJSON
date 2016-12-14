@@ -32,14 +32,30 @@ class ViewController: UIViewController {
 
         print("**** readableJson: \(readableJson)")
         
-        // main loop
-        for (_, object) in readableJson {
+        let json = JSON(data: jsonData as! Data)
+        let daseResponse = DaseResponse.init(json: json)
+        
+        let username = daseResponse.user?.name
+        
+        print ("***** 👉 username: \(username!)")
+        
 
-            let user = User.init(id: object["id"].stringValue, email: object["email"].stringValue, name: object["name"].stringValue)
-            
-            print("****** name: \(user.name)  email: \(user.email)  id: \(user.id)")
-        }
+        
     }
+    
+    
+        
+        
+        
+//         main loop
+//        for (_, object) in readableJson {
+//
+//            print("***** 👉 looping: \(object)")
+//            
+////            let user = User.init(id: object["id"].stringValue, email: object["email"].stringValue, name: object["name"].stringValue)
+////            
+////            print("****** name: \(user.name)  email: \(user.email)  id: \(user.id)")
+//        }
+//    }
 
 }
-
